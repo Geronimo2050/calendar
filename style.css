@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.fondo {
+    width: 100%;
+    height: 100%;
+}
+
+.testo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    animation-name: appear;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear {
+    0%{opacity: 0;}
+   
+    100%{opacity: 1;}
+}
+
+.babbo {
+    width: 200px;
+    height: 150px;
+    bottom: 13%;
+    position: absolute;
+    animation-name: engine-start;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes engine-start {
+
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+.hide {
+    display: none;
+}
+
+
+.day-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.current-day, .current-message {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: red;
+    padding: 50px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #fff;
+    border: 4px solid black;
+}
+
+span {
+    font-size: 60px;
+}
+
+
+@media (min-width:600px) {
+    .container {
+        width: 500px;
+        height: 700px;
+    }
+
+    .babbo {
+     bottom: 5%;
+    }
+}
+
